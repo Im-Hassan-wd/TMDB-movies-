@@ -1,0 +1,95 @@
+.App {
+  margin: 1% auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.logo {
+  filter: invert(1);
+  width: 50px;
+  height: 50px;
+  margin: 20px 0;
+}
+
+.popular {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem 2rem;
+}
+
+.popular a {
+  text-decoration: none;
+  color: #000;
+}
+
+.movie img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.popular h2 {
+  font-size: 0.8rem;
+}
+
+.filter button {
+  margin-right: 2rem;
+  min-width: 5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #fff;
+  color: rgb(65, 98, 168);
+  border-radius: 1rem;
+  border: 1px solid rgb(65, 98, 168);
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+button.active {
+  color: #fff;
+  background: rgb(65, 98, 168);
+}
+
+/* movie details  */
+.movie-details {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.movie-preview .head {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.movie-details .preview-image {
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 3rem;
+}
+
+.popularity,
+.runtime {
+  margin-left: 20px;
+}
+
+.runtime {
+  padding: 0 5px;
+}
+
+.popularity .star {
+  margin: 5px;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 20px 0;
+  font-weight: bold;
+}
